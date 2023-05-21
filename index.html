@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping chart</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <h1>Shop cart</h1>
+          </div>
+          <div class="cart_counter">
+            <i class="bx bxs-cart-alt"></i>
+            <span id="total_counter">0</span>
+          </div>
+        </nav>
+        <div class="cart">
+          <div class="cart_items">
+            
+            <div class="payment-type">
+              <h4>Choose payment</h4>
+              <input checked type="radio"  name="payment_method" class="radio" id="paypal" value="paypal">
+              <label for="">Paypal</label>
+             
+            </div>
+            <input type="text" name="" id="phone" class="form-control" placeholder="please enter your phone">
+            
+            <div class="checkOut">
+              <h4 >Total Amount : </h4>
+              <h4 class="total_cost">$500</h4>
+              <button class="btn check_out_btn">checkOut</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="product">
+        <div class="product_element">
+          <input type="hidden" name="" id="product_id" value="1">
+          <img src="./images/44-440309_nike-shoes-png-transparent-background-nike-shoes-png-removebg-preview.png" alt="" id="image">
+          <h4 class="product_name">Nike color</h4>
+          <h5 class="product_price">$890</h5>
+          <div class="btn_add_toCart">Add to cart</div>
+        </div>
+        <div class="product_element">
+          <input type="hidden" name="" id="product_id" value="2">
+          <img src="./images/44-440309_nike-shoes-png-transparent-background-nike-shoes-png-removebg-preview.png" alt="" id="image">
+          <h4 class="product_name">Nike color</h4>
+          <h5 class="product_price">$90</h5>
+          <div class="btn_add_toCart">Add to cart</div>
+        </div>
+        <div class="product_element">
+          <input type="hidden" name="" id="product_id" value="3">
+          <img src="./images/44-440309_nike-shoes-png-transparent-background-nike-shoes-png-removebg-preview.png" alt="" id="image">
+          <h4 class="product_name">Nike color</h4>
+          <h5 class="product_price">$80</h5>
+          <div class="btn_add_toCart">Add to cart</div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
